@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+.icons {
+  position: absolute;
+  bottom: 30px;left : 0;
+	width: 100%;
+}
+i {
+    padding: 0px 10px;
+    float:right;
+    display: inline-block;
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+    opacity: 0.8;
+    text-decoration: none;
+}
+i:hover {
+    opacity: 1;
+}
+
+
+body{
+    overflow: auto;
+    width:1920px;
+}
+
+#mainbtn{
+    width:300px;
+    height:100px;
+    background-color: aquamarine;
+    margin:auto;
+    position: absolute;
+    left:0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#mainbtn div{
+    width:80px;
+    height:30px;
+    margin:35px auto;
+}
+
+.workmenu_layer{
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,1);
+    float:left;
+    z-index: 1;
+}
+.workmenu{
+    width:384px;
+    height:100%;
+    background-image: url(srcs/고정설명바.png);
+    float:right;
+}
+
+.workmenu_layer:hover{
+    background-color: rgba(0,0,0,0);
+    transition-duration: 0.2s;
+}
+
+.box {
+    position:relative;
+    vertical-align: middle;
+    color: #0b7;
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    line-height: 60px;
+    text-align: center;
+    transition: 0.5s;
+    padding: 0 20px;
+    cursor: pointer;
+    transition:0.5s;
+    margin : 0 96px;
+    margin-top: 400px;
+}
+
+.box::after{
+    border-top: 3px solid white;
+    border-right: 3px solid white;
+    transform-origin: 100% 0%;
+}
+
+.box::before{
+    border-left: 3px solid white;
+    border-bottom: 3px solid white;
+    transform-origin: 0% 100%;
+}
+
+.box::before, .box::after {
+    width: 100%;
+    height:100%;
+    z-index: 3;
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    box-sizing: border-box;
+    transform: scale(0);
+    transition: 0.5s;
+}
+
+.box:hover::after, .box:hover::before {
+    transform: scale(1);
+}
+
+#btn{
+    display: none;
+    transition-duration: 3s;
+}
+
+.workmenu_layer:hover #btn{
+    display:block;
+}
+
+
+.sidecaption{
+    z-index: 3;
+    position:fixed;
+    top:0;
+    left:40px;
+    width:368px;
+    height:100%;
+    background-image: url(srcs/고정설명바.png);
+    opacity: 0.96;
+}
+
+#sc_1{
+    z-index: 10;
+    float: left;
+    color: white;
+    height:17%;
+    width:348px;
+    margin-top: 17%;
+    margin-left: 10px;
+}
+
+#sc_2{
+    color: white;
+    border-top: solid 1px white;
+    float:left;
+    height:17%;
+    width:348px;
+    margin-left: 10px;
+}
+
+#sc_3{
+    color: white;
+    border-top: solid 1px white;
+    float:left;
+    height:17%;
+    width:348px;
+    margin-left: 10px;
+}
+
+#sc_4{
+    color:white;
+    border-top: solid 1px white;
+    float:left;
+    height:17%;
+    width:348px;
+    margin-left: 10px;
+}
+
+#sc_5{
+    color:white;
+    float:left;
+    height:17%;
+    width:348px;
+    margin-left: 10px;
+}
+
+
+.album{
+    margin-top:220px;
+    padding-left:408px;
+    width:10000px;
+    height:60%;
+    float: left;
+}
+
+.album2{
+    margin-top:220px;
+    margin-left:408px;
+    width:1328px;
+    height:10000px;
+    float: left;
+}
+
+.al2_pic{
+    height:510px;
+    width:100%;
+    padding-right:100px;
+    padding-bottom: 100px;
+
+}
+
+.al2_pic img{
+    float: right;    
+}
+
+.historycaption{
+    float:left;
+    width:auto;
+    height:auto;
+}
+
+.pic{
+    height:700px;
+    width:910px;
+    float: left;    
+    padding-right:100px;
+}
+
+.pic_1{
+    height:700px;
+    width:910px;
+    float: left;    
+    padding-right:100px;
+
+}
+
+.imgs_frame{
+    height:510px;
+    width:auto;
+}
+
+.imgs{
+    width:910px;
+    height:510px;
+    float: left;
+    opacity: 0.3;
+    transition-duration: 1s;
+}
+
+.imgs:hover{
+    opacity: 1;
+    transition-duration: 1s;
+
+}
+
+
+.caption{
+    width:910px;
+    left:0;
+    text-align: right;
+    line-height: 24px;
+    float: left;
+}
